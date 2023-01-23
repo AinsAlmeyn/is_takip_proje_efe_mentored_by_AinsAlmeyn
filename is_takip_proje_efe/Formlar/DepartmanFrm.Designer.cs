@@ -53,7 +53,7 @@
             this.gridControl1.Location = new System.Drawing.Point(-1, 2);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(759, 360);
+            this.gridControl1.Size = new System.Drawing.Size(695, 360);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -74,15 +74,15 @@
             this.groupControl1.Controls.Add(this.textid);
             this.groupControl1.Controls.Add(this.btnlist);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(757, 2);
+            this.groupControl1.Location = new System.Drawing.Point(700, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(226, 360);
+            this.groupControl1.Size = new System.Drawing.Size(338, 364);
             this.groupControl1.TabIndex = 1;
             // 
             // btnupdate
             // 
             this.btnupdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.ImageOptions.Image")));
-            this.btnupdate.Location = new System.Drawing.Point(113, 159);
+            this.btnupdate.Location = new System.Drawing.Point(177, 200);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(100, 36);
             this.btnupdate.TabIndex = 7;
@@ -92,7 +92,7 @@
             // btnsil
             // 
             this.btnsil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnsil.ImageOptions.Image")));
-            this.btnsil.Location = new System.Drawing.Point(113, 115);
+            this.btnsil.Location = new System.Drawing.Point(177, 156);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(100, 38);
             this.btnsil.TabIndex = 6;
@@ -102,7 +102,7 @@
             // btnekle
             // 
             this.btnekle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnekle.ImageOptions.Image")));
-            this.btnekle.Location = new System.Drawing.Point(9, 115);
+            this.btnekle.Location = new System.Drawing.Point(73, 156);
             this.btnekle.Name = "btnekle";
             this.btnekle.Size = new System.Drawing.Size(100, 38);
             this.btnekle.TabIndex = 5;
@@ -111,14 +111,14 @@
             // 
             // textad
             // 
-            this.textad.Location = new System.Drawing.Point(85, 70);
+            this.textad.Location = new System.Drawing.Point(149, 111);
             this.textad.Name = "textad";
             this.textad.Size = new System.Drawing.Size(130, 20);
             this.textad.TabIndex = 4;
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(7, 73);
+            this.labelControl2.Location = new System.Drawing.Point(71, 114);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(72, 13);
             this.labelControl2.TabIndex = 3;
@@ -126,7 +126,7 @@
             // 
             // textid
             // 
-            this.textid.Location = new System.Drawing.Point(85, 41);
+            this.textid.Location = new System.Drawing.Point(149, 82);
             this.textid.Name = "textid";
             this.textid.Size = new System.Drawing.Size(130, 20);
             this.textid.TabIndex = 2;
@@ -134,7 +134,7 @@
             // btnlist
             // 
             this.btnlist.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnlist.ImageOptions.Image")));
-            this.btnlist.Location = new System.Drawing.Point(7, 159);
+            this.btnlist.Location = new System.Drawing.Point(71, 200);
             this.btnlist.Name = "btnlist";
             this.btnlist.Size = new System.Drawing.Size(102, 36);
             this.btnlist.TabIndex = 1;
@@ -143,7 +143,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(7, 44);
+            this.labelControl1.Location = new System.Drawing.Point(71, 85);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(71, 13);
             this.labelControl1.TabIndex = 0;
@@ -153,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 361);
+            this.ClientSize = new System.Drawing.Size(1038, 361);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "DepartmanFrm";
