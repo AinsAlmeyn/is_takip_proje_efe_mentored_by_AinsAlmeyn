@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace is_takip_proje_efe
 {
-    public partial class Form1 : Form
+    public partial class AnaForm : Form
     {
-        public Form1()
+        public AnaForm()
         {
             InitializeComponent();
         }
@@ -37,5 +37,14 @@ namespace is_takip_proje_efe
             frm3.MdiParent = this;
             frm3.Show();
         }
+
+        private void görevler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           Formlar.GorevListesi frm4=new Formlar.GorevListesi();
+            frm4.MdiParent = this;  
+            frm4.Show();    
+        }
+
+        
     }
 }

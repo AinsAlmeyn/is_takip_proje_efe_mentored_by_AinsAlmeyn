@@ -32,7 +32,7 @@
             this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.lblayındep = new DevExpress.XtraEditors.LabelControl();
             this.panelControl14 = new DevExpress.XtraEditors.PanelControl();
-            this.lblmaxdep = new DevExpress.XtraEditors.LabelControl();
+            this.lblbgnacılanggrvler = new DevExpress.XtraEditors.LabelControl();
             this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl15 = new DevExpress.XtraEditors.PanelControl();
             this.lblpasifissay = new DevExpress.XtraEditors.LabelControl();
@@ -65,7 +65,7 @@
             this.lblfirmasay = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.lblbugünissay = new DevExpress.XtraEditors.LabelControl();
+            this.lblsongorevdetayı = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.lbldepartmansay = new DevExpress.XtraEditors.LabelControl();
@@ -130,7 +130,7 @@
             // 
             this.lblayındep.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblayındep.Appearance.Options.UseFont = true;
-            this.lblayındep.Location = new System.Drawing.Point(89, 50);
+            this.lblayındep.Location = new System.Drawing.Point(15, 49);
             this.lblayındep.Name = "lblayındep";
             this.lblayındep.Size = new System.Drawing.Size(16, 35);
             this.lblayındep.TabIndex = 1;
@@ -140,32 +140,32 @@
             // 
             this.panelControl14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(189)))), ((int)(((byte)(227)))));
             this.panelControl14.Appearance.Options.UseBackColor = true;
-            this.panelControl14.Controls.Add(this.lblmaxdep);
+            this.panelControl14.Controls.Add(this.lblbgnacılanggrvler);
             this.panelControl14.Controls.Add(this.labelControl28);
             this.panelControl14.Location = new System.Drawing.Point(795, 127);
             this.panelControl14.Name = "panelControl14";
             this.panelControl14.Size = new System.Drawing.Size(192, 92);
             this.panelControl14.TabIndex = 19;
             // 
-            // lblmaxdep
+            // lblbgnacılanggrvler
             // 
-            this.lblmaxdep.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblmaxdep.Appearance.Options.UseFont = true;
-            this.lblmaxdep.Location = new System.Drawing.Point(89, 52);
-            this.lblmaxdep.Name = "lblmaxdep";
-            this.lblmaxdep.Size = new System.Drawing.Size(16, 35);
-            this.lblmaxdep.TabIndex = 1;
-            this.lblmaxdep.Text = "0";
+            this.lblbgnacılanggrvler.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblbgnacılanggrvler.Appearance.Options.UseFont = true;
+            this.lblbgnacılanggrvler.Location = new System.Drawing.Point(89, 52);
+            this.lblbgnacılanggrvler.Name = "lblbgnacılanggrvler";
+            this.lblbgnacılanggrvler.Size = new System.Drawing.Size(16, 35);
+            this.lblbgnacılanggrvler.TabIndex = 1;
+            this.lblbgnacılanggrvler.Text = "0";
             // 
             // labelControl28
             // 
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F);
             this.labelControl28.Appearance.Options.UseFont = true;
-            this.labelControl28.Location = new System.Drawing.Point(33, 1);
+            this.labelControl28.Location = new System.Drawing.Point(15, 1);
             this.labelControl28.Name = "labelControl28";
-            this.labelControl28.Size = new System.Drawing.Size(104, 50);
+            this.labelControl28.Size = new System.Drawing.Size(138, 50);
             this.labelControl28.TabIndex = 0;
-            this.labelControl28.Text = "Maximum\r\nDepartman";
+            this.labelControl28.Text = "  Bugün Açılan  \r\n     Görevler";
             // 
             // panelControl15
             // 
@@ -209,7 +209,7 @@
             // 
             this.lblayınpers.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblayınpers.Appearance.Options.UseFont = true;
-            this.lblayınpers.Location = new System.Drawing.Point(110, 49);
+            this.lblayınpers.Location = new System.Drawing.Point(15, 49);
             this.lblayınpers.Name = "lblayınpers";
             this.lblayınpers.Size = new System.Drawing.Size(16, 35);
             this.lblayınpers.TabIndex = 1;
@@ -415,7 +415,7 @@
             // 
             this.lblsongorev.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblsongorev.Appearance.Options.UseFont = true;
-            this.lblsongorev.Location = new System.Drawing.Point(110, 49);
+            this.lblsongorev.Location = new System.Drawing.Point(15, 49);
             this.lblsongorev.Name = "lblsongorev";
             this.lblsongorev.Size = new System.Drawing.Size(16, 35);
             this.lblsongorev.TabIndex = 1;
@@ -462,32 +462,32 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.lblbugünissay);
+            this.panelControl2.Controls.Add(this.lblsongorevdetayı);
             this.panelControl2.Controls.Add(this.labelControl4);
             this.panelControl2.Location = new System.Drawing.Point(42, 127);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(245, 92);
             this.panelControl2.TabIndex = 11;
             // 
-            // lblbugünissay
+            // lblsongorevdetayı
             // 
-            this.lblbugünissay.Appearance.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblbugünissay.Appearance.Options.UseFont = true;
-            this.lblbugünissay.Location = new System.Drawing.Point(110, 49);
-            this.lblbugünissay.Name = "lblbugünissay";
-            this.lblbugünissay.Size = new System.Drawing.Size(16, 35);
-            this.lblbugünissay.TabIndex = 1;
-            this.lblbugünissay.Text = "0";
+            this.lblsongorevdetayı.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblsongorevdetayı.Appearance.Options.UseFont = true;
+            this.lblsongorevdetayı.Location = new System.Drawing.Point(21, 60);
+            this.lblsongorevdetayı.Name = "lblsongorevdetayı";
+            this.lblsongorevdetayı.Size = new System.Drawing.Size(10, 23);
+            this.lblsongorevdetayı.TabIndex = 1;
+            this.lblsongorevdetayı.Text = "0";
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(15, 18);
+            this.labelControl4.Location = new System.Drawing.Point(53, 18);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(166, 25);
+            this.labelControl4.Size = new System.Drawing.Size(161, 25);
             this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "Bugünkü İş Sayısı";
+            this.labelControl4.Text = "Son Görev Detayı";
             // 
             // panelControl6
             // 
@@ -623,7 +623,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl13;
         private DevExpress.XtraEditors.LabelControl lblayındep;
         private DevExpress.XtraEditors.PanelControl panelControl14;
-        private DevExpress.XtraEditors.LabelControl lblmaxdep;
+        private DevExpress.XtraEditors.LabelControl lblbgnacılanggrvler;
         private DevExpress.XtraEditors.LabelControl labelControl28;
         private DevExpress.XtraEditors.PanelControl panelControl15;
         private DevExpress.XtraEditors.LabelControl lblpasifissay;
@@ -656,7 +656,7 @@
         private DevExpress.XtraEditors.LabelControl lblfirmasay;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.LabelControl lblbugünissay;
+        private DevExpress.XtraEditors.LabelControl lblsongorevdetayı;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.PanelControl panelControl6;
         private DevExpress.XtraEditors.LabelControl lbldepartmansay;

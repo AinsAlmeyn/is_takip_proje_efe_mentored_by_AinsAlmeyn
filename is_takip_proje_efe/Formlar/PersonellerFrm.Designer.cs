@@ -65,7 +65,7 @@
             this.gridControl1.Location = new System.Drawing.Point(-10, 5);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(704, 344);
+            this.gridControl1.Size = new System.Drawing.Size(693, 344);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -94,9 +94,9 @@
             this.groupControl1.Controls.Add(this.btnlist);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.textİd);
-            this.groupControl1.Location = new System.Drawing.Point(700, 5);
+            this.groupControl1.Location = new System.Drawing.Point(689, 5);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(343, 361);
+            this.groupControl1.Size = new System.Drawing.Size(346, 361);
             this.groupControl1.TabIndex = 1;
             // 
             // lookUpEdit1

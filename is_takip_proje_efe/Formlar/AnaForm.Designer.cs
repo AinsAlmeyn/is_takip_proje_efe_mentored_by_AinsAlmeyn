@@ -1,6 +1,6 @@
 ﻿namespace is_takip_proje_efe
 {
-    partial class Form1
+    partial class AnaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btndepartmanliste = new DevExpress.XtraBars.BarButtonItem();
@@ -42,7 +42,7 @@
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.görevler = new DevExpress.XtraBars.BarButtonItem();
+            this.btngorevlistesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
@@ -98,7 +98,7 @@
             this.barButtonItem9,
             this.barButtonItem10,
             this.barButtonItem11,
-            this.görevler,
+            this.btngorevlistesi,
             this.barButtonItem12,
             this.barButtonItem13,
             this.barButtonItem14,
@@ -187,8 +187,8 @@
             // 
             this.btnpersonelistatistik.Caption = "Personel istatistik";
             this.btnpersonelistatistik.Id = 9;
-            this.btnpersonelistatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.btnpersonelistatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
+            this.btnpersonelistatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnpersonelistatistik.ImageOptions.Image")));
+            this.btnpersonelistatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnpersonelistatistik.ImageOptions.LargeImage")));
             this.btnpersonelistatistik.Name = "btnpersonelistatistik";
             this.btnpersonelistatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
@@ -216,13 +216,14 @@
             this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
             this.barButtonItem11.Name = "barButtonItem11";
             // 
-            // görevler
+            // btngorevlistesi
             // 
-            this.görevler.Caption = "Görev Listesi";
-            this.görevler.Id = 14;
-            this.görevler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("görevler.ImageOptions.Image")));
-            this.görevler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("görevler.ImageOptions.LargeImage")));
-            this.görevler.Name = "görevler";
+            this.btngorevlistesi.Caption = "Görev Listesi";
+            this.btngorevlistesi.Id = 14;
+            this.btngorevlistesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("görevler.ImageOptions.Image")));
+            this.btngorevlistesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("görevler.ImageOptions.LargeImage")));
+            this.btngorevlistesi.Name = "btngorevlistesi";
+            this.btngorevlistesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.görevler_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -405,11 +406,11 @@
             this.ribbonPageGroup9,
             this.ribbonPageGroup10});
             this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "Görev listesi";
+            this.ribbonPage5.Text = "Görevler";
             // 
             // ribbonPageGroup8
             // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.görevler);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btngorevlistesi);
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem13);
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem14);
@@ -464,14 +465,14 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // Form1
+            // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 516);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
-            this.Name = "Form1";
+            this.Name = "AnaForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
@@ -499,7 +500,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem görevler;
+        private DevExpress.XtraBars.BarButtonItem btngorevlistesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
