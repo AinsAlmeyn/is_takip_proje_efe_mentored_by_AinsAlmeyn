@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+is_takip_proje_efe/Entity/Model1.edmx.diagram
+is_takip_proje_efe/Entity/Model1.Designer.cs
+*.config
+is_takip_proje_efe/Entity/Model1.Designer.cs
+is_takip_proje_efe/Formlar/DepartmanFrm.Designer.cs
+*.csproj

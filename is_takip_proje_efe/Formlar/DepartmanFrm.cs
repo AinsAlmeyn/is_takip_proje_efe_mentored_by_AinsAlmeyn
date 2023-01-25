@@ -68,5 +68,10 @@ namespace is_takip_proje_efe.Formlar
             XtraMessageBox.Show("güncelleme işlemi başarılı", "bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             listele();
         }
+
+        private void DepartmanFrm_Load(object sender, EventArgs e)
+        {
+            listele();
+        }
     }
 }

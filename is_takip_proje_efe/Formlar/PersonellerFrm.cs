@@ -20,7 +20,7 @@ namespace is_takip_proje_efe.Formlar
             
             InitializeComponent();
         }
-        DbIsTakipEntities db=new DbIsTakipEntities();
+        DbIsTakipEntities db = new DbIsTakipEntities();
         void personeller()
         {
             var degerler = (from x in db.TblPersoneller
