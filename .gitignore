@@ -369,3 +369,5 @@ is_takip_proje_efe/Formlar/DepartmanFrm.Designer.cs
 *.csproj
 /is_takip_proje_efe/Formlar/DepartmanFrm.Designer.cs
 /is_takip_proje_efe/Formlar/DepartmanFrm.resx
+/is_takip_proje_efe/Formlar/GorevListesi.Designer.cs
+/is_takip_proje_efe/Formlar/GorevListesi.resx
