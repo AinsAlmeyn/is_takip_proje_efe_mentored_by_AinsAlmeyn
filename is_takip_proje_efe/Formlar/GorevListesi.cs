@@ -27,8 +27,6 @@ namespace is_takip_proje_efe.Formlar
                                            x.Aciklama,
                                        }).ToList();
         }
-
-      
     } 
 
 }
