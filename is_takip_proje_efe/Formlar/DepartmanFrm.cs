@@ -71,7 +71,7 @@ namespace is_takip_proje_efe.Formlar
 
         private void DepartmanFrm_Load(object sender, EventArgs e)
         {
-            listele();
+
         }
     }
 }
