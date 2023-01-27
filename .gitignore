@@ -363,3 +363,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+/is_takip_proje_efe/Formlar/GorevListesi.resx
+/is_takip_proje_efe/Formlar/GorevListesi.Designer.cs
