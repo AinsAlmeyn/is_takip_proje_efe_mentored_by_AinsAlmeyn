@@ -1,4 +1,5 @@
-﻿using System;
+﻿using is_takip_proje_efe.Formlar;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace is_takip_proje_efe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AnaForm());
+            Application.Run(new Form1());
         }
     }
 }

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbIsTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbIsTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="TblAdminler">
           <Key>
             <PropertyRef Name="ID" />
@@ -52,7 +52,7 @@
           <Property Name="GorevVeren" Type="int" />
           <Property Name="GorevAlan" Type="int" />
           <Property Name="Aciklama" Type="nvarchar" MaxLength="500" />
-          <Property Name="Durum" Type="nvarchar" MaxLength="20" />
+          <Property Name="Durum" Type="bit" />
           <Property Name="Tarih" Type="date" />
         </EntityType>
         <EntityType Name="TblPersoneller">
@@ -140,8 +140,7 @@
             <End Role="TblPersoneller" EntitySet="TblPersoneller" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbIsTakipModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -194,7 +193,7 @@
           <Property Name="GorevVeren" Type="Int32" />
           <Property Name="GorevAlan" Type="Int32" />
           <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-          <Property Name="Durum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Durum" Type="Boolean" />
           <Property Name="Tarih" Type="DateTime" Precision="0" />
           <NavigationProperty Name="TblGorevDetaylar" Relationship="Self.FK_TblGorevDetaylar_TblGorevler1" FromRole="TblGorevler" ToRole="TblGorevDetaylar" />
           <NavigationProperty Name="TblPersoneller" Relationship="Self.FK_TblGorevler_TblPersoneller2" FromRole="TblGorevler" ToRole="TblPersoneller" />

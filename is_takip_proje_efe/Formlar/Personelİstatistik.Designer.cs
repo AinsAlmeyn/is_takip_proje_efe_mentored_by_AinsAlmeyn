@@ -375,6 +375,8 @@
             // 
             // panelControl9
             // 
+            this.panelControl9.Appearance.BackColor = System.Drawing.Color.Cyan;
+            this.panelControl9.Appearance.Options.UseBackColor = true;
             this.panelControl9.Controls.Add(this.lblaktifis);
             this.panelControl9.Controls.Add(this.labelControl18);
             this.panelControl9.Location = new System.Drawing.Point(544, 27);
@@ -553,7 +555,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 341);
+            this.ClientSize = new System.Drawing.Size(1023, 323);
             this.Controls.Add(this.panelControl13);
             this.Controls.Add(this.panelControl14);
             this.Controls.Add(this.panelControl15);

@@ -23,8 +23,8 @@ namespace is_takip_proje_efe.Formlar
             lbldepartmansay.Text = db.TblDepartmanlar.Count().ToString();
             lbltoplampers.Text = db.TblPersoneller.Count().ToString();
             lblfirmasay.Text = db.TblFirmalar.Count().ToString();
-            lblaktifis.Text = db.TblGorevler.Count(x => x.Durum == "1").ToString();
-            lblpasifissay.Text = db.TblGorevler.Count(x => x.Durum == "0").ToString();
+            lblaktifis.Text = db.TblGorevler.Count(x => x.Durum == true).ToString();
+            lblpasifissay.Text = db.TblGorevler.Count(x => x.Durum == false).ToString();
             lblsongorev.Text = db.TblGorevler.OrderByDescending(x => x.ID).Select(x => x.Aciklama).FirstOrDefault();
             lblisyapılansahir.Text = db.TblFirmalar.Select(x => x.il).Distinct().Count().ToString();
             lblsektorsay.Text = db.TblFirmalar.Select(x => x.Sektor).Distinct().Count().ToString();

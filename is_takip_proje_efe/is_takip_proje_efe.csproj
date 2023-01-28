@@ -115,17 +115,29 @@
     <Compile Include="Entity\TblPersoneller.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Formlar\AnaForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formlar\AnaForm.Designer.cs">
-      <DependentUpon>AnaForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formlar\DepartmanFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\DepartmanFrm.Designer.cs">
       <DependentUpon>DepartmanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FORM1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FORM1.Designer.cs">
+      <DependentUpon>FORM1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\GorevDetayFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\GorevDetayFrm.Designer.cs">
+      <DependentUpon>GorevDetayFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Gorevfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Gorevfrm.Designer.cs">
+      <DependentUpon>Gorevfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\GorevListesi.cs">
       <SubType>Form</SubType>
@@ -147,11 +159,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formlar\AnaForm.resx">
-      <DependentUpon>AnaForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\DepartmanFrm.resx">
       <DependentUpon>DepartmanFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FORM1.resx">
+      <DependentUpon>FORM1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\GorevDetayFrm.resx">
+      <DependentUpon>GorevDetayFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Gorevfrm.resx">
+      <DependentUpon>Gorevfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\GorevListesi.resx">
       <DependentUpon>GorevListesi.cs</DependentUpon>
