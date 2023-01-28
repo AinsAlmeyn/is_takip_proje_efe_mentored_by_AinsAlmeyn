@@ -26,10 +26,6 @@ namespace is_takip_proje_efe
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.PersonellerFrm frm2=new Formlar.PersonellerFrm();
-            frm2.MdiParent = this;
-            frm2.Show();
-        }
 
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -45,6 +41,21 @@ namespace is_takip_proje_efe
             frm4.Show();    
         }
 
+
+                }
+                private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+                {
+                    Formlar.Personelİstatistik frm3 = new Formlar.Personelİstatistik();
+                    frm3.MdiParent = this;
+                    frm3.Show();
+                }
+            }
+            private void görevler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+            {
+                Formlar.GorevListesi frm4 = new Formlar.GorevListesi();
+                frm4.MdiParent = this;
+                frm4.Show();
+            }
         
     }
 }
