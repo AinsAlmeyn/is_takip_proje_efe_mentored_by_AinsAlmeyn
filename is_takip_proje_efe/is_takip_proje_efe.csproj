@@ -115,6 +115,12 @@
     <Compile Include="Entity\TblPersoneller.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\AnaAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\AnaAnaForm.Designer.cs">
+      <DependentUpon>AnaAnaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\DepartmanFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formlar\AnaAnaForm.resx">
+      <DependentUpon>AnaAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\DepartmanFrm.resx">
       <DependentUpon>DepartmanFrm.cs</DependentUpon>
     </EmbeddedResource>

@@ -133,6 +133,7 @@
             this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -271,8 +272,8 @@
             // 
             this.gorevdetaylari.Caption = "Gorev Detaylari";
             this.gorevdetaylari.Id = 18;
-            this.gorevdetaylari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.Image")));
-            this.gorevdetaylari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.LargeImage")));
+            this.gorevdetaylari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("gorevdetaylari.ImageOptions.Image")));
+            this.gorevdetaylari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("gorevdetaylari.ImageOptions.LargeImage")));
             this.gorevdetaylari.Name = "gorevdetaylari";
             this.gorevdetaylari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem18_ItemClick);
             // 
