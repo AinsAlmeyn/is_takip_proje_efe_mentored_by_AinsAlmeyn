@@ -35,8 +35,6 @@ namespace is_takip_proje_efe.Formlar
             chartControl1.Series["Durumseries"].Points.AddPoint("Pasif Görevler", int.Parse(lblsayi3.Text));
             
         }
-
-      
     } 
 
 }
