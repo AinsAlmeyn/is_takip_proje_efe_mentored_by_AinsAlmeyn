@@ -5,6 +5,17 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="DbIsTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cagrilartbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CagriFirma" Type="int" />
+          <Property Name="Konu" Type="nvarchar" MaxLength="50" />
+          <Property Name="Aciklama" Type="nvarchar(max)" />
+          <Property Name="Durum" Type="bit" />
+          <Property Name="Tarih" Type="date" />
+        </EntityType>
         <EntityType Name="TblAdminler">
           <Key>
             <PropertyRef Name="ID" />
@@ -68,6 +79,18 @@
           <Property Name="Departman" Type="int" />
           <Property Name="Durum" Type="bit" />
         </EntityType>
+        <Association Name="FK_Cagrilartbl_TblFirmalar">
+          <End Role="TblFirmalar" Type="Self.TblFirmalar" Multiplicity="0..1" />
+          <End Role="Cagrilartbl" Type="Self.Cagrilartbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblFirmalar">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Cagrilartbl">
+              <PropertyRef Name="CagriFirma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_TblGorevDetaylar_TblGorevler1">
           <End Role="TblGorevler" Type="Self.TblGorevler" Multiplicity="0..1" />
           <End Role="TblGorevDetaylar" Type="Self.TblGorevDetaylar" Multiplicity="*" />
@@ -117,12 +140,17 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DbIsTakipModelStoreContainer">
+          <EntitySet Name="Cagrilartbl" EntityType="Self.Cagrilartbl" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblAdminler" EntityType="Self.TblAdminler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblDepartmanlar" EntityType="Self.TblDepartmanlar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblFirmalar" EntityType="Self.TblFirmalar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblGorevDetaylar" EntityType="Self.TblGorevDetaylar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblGorevler" EntityType="Self.TblGorevler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblPersoneller" EntityType="Self.TblPersoneller" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Cagrilartbl_TblFirmalar" Association="Self.FK_Cagrilartbl_TblFirmalar">
+            <End Role="TblFirmalar" EntitySet="TblFirmalar" />
+            <End Role="Cagrilartbl" EntitySet="Cagrilartbl" />
+          </AssociationSet>
           <AssociationSet Name="FK_TblGorevDetaylar_TblGorevler1" Association="Self.FK_TblGorevDetaylar_TblGorevler1">
             <End Role="TblGorevler" EntitySet="TblGorevler" />
             <End Role="TblGorevDetaylar" EntitySet="TblGorevDetaylar" />
@@ -173,6 +201,7 @@
           <Property Name="il" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="ilce" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Cagrilartbl" Relationship="DbIsTakipModel.FK_Cagrilartbl_TblFirmalar" FromRole="TblFirmalar" ToRole="Cagrilartbl" />
         </EntityType>
         <EntityType Name="TblGorevDetaylar">
           <Key>
@@ -286,7 +315,36 @@
             <End Role="TblPersoneller" EntitySet="TblPersoneller" />
             <End Role="TblGorevler" EntitySet="TblGorevler" />
           </AssociationSet>
+          <EntitySet Name="Cagrilartbl" EntityType="DbIsTakipModel.Cagrilartbl" />
+          <AssociationSet Name="FK_Cagrilartbl_TblFirmalar" Association="DbIsTakipModel.FK_Cagrilartbl_TblFirmalar">
+            <End Role="TblFirmalar" EntitySet="TblFirmalar" />
+            <End Role="Cagrilartbl" EntitySet="Cagrilartbl" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Cagrilartbl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="CagriFirma" Type="Int32" />
+          <Property Name="Konu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="TblFirmalar" Relationship="DbIsTakipModel.FK_Cagrilartbl_TblFirmalar" FromRole="Cagrilartbl" ToRole="TblFirmalar" />
+          <Property Name="Durum" Type="Boolean" />
+        </EntityType>
+        <Association Name="FK_Cagrilartbl_TblFirmalar">
+          <End Type="DbIsTakipModel.TblFirmalar" Role="TblFirmalar" Multiplicity="0..1" />
+          <End Type="DbIsTakipModel.Cagrilartbl" Role="Cagrilartbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblFirmalar">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Cagrilartbl">
+              <PropertyRef Name="CagriFirma" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -359,6 +417,18 @@
                 <ScalarProperty Name="Gorsel" ColumnName="Gorsel" />
                 <ScalarProperty Name="Departman" ColumnName="Departman" />
                 <ScalarProperty Name="Durum" ColumnName="Durum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cagrilartbl">
+            <EntityTypeMapping TypeName="DbIsTakipModel.Cagrilartbl">
+              <MappingFragment StoreEntitySet="Cagrilartbl">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Konu" ColumnName="Konu" />
+                <ScalarProperty Name="CagriFirma" ColumnName="CagriFirma" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
