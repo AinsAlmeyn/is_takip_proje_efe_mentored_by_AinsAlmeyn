@@ -21,6 +21,7 @@ namespace is_takip_proje_efe.Formlar
             InitializeComponent();
         }
         DbIsTakipEntities db = new DbIsTakipEntities();
+        
         void personeller()
         {
             var degerler = (from x in db.TblPersoneller
@@ -36,6 +37,7 @@ namespace is_takip_proje_efe.Formlar
                                 x.Telefon,
                                 x.Gorsel,
                                 x.Durum
+                                
                             });
             gridControl1.DataSource = degerler.Where(x=>x.Durum==true).ToList();
         }

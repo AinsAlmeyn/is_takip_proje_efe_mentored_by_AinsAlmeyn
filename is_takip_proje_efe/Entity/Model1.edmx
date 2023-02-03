@@ -40,10 +40,12 @@
           <Property Name="Yetkili" Type="nvarchar" MaxLength="30" />
           <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
           <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="20" />
           <Property Name="Sektor" Type="nvarchar" MaxLength="30" />
           <Property Name="il" Type="nvarchar" MaxLength="20" />
           <Property Name="ilce" Type="nvarchar" MaxLength="30" />
           <Property Name="Adres" Type="nvarchar" MaxLength="200" />
+          <Property Name="Gorsel" Type="nvarchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="TblGorevDetaylar">
           <Key>
@@ -78,6 +80,8 @@
           <Property Name="Gorsel" Type="nvarchar" MaxLength="200" />
           <Property Name="Departman" Type="int" />
           <Property Name="Durum" Type="bit" />
+          <Property Name="Rol" Type="char" MaxLength="1" />
+          <Property Name="Sifre" Type="nchar" MaxLength="10" />
         </EntityType>
         <Association Name="FK_Cagrilartbl_TblFirmalar">
           <End Role="TblFirmalar" Type="Self.TblFirmalar" Multiplicity="0..1" />
@@ -202,6 +206,8 @@
           <Property Name="ilce" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Cagrilartbl" Relationship="DbIsTakipModel.FK_Cagrilartbl_TblFirmalar" FromRole="TblFirmalar" ToRole="Cagrilartbl" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Gorsel" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TblGorevDetaylar">
           <Key>
@@ -243,6 +249,8 @@
           <NavigationProperty Name="TblDepartmanlar" Relationship="Self.FK_TblPersoneller_TblDepartmanlar1" FromRole="TblPersoneller" ToRole="TblDepartmanlar" />
           <NavigationProperty Name="TblGorevler" Relationship="Self.FK_TblGorevler_TblPersoneller2" FromRole="TblPersoneller" ToRole="TblGorevler" />
           <NavigationProperty Name="TblGorevler1" Relationship="Self.FK_TblGorevler_TblPersoneller3" FromRole="TblPersoneller" ToRole="TblGorevler" />
+          <Property Name="Rol" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Sifre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
         </EntityType>
         <Association Name="FK_TblPersoneller_TblDepartmanlar1">
           <End Role="TblDepartmanlar" Type="Self.TblDepartmanlar" Multiplicity="0..1" />
@@ -371,6 +379,8 @@
           <EntitySetMapping Name="TblFirmalar">
             <EntityTypeMapping TypeName="DbIsTakipModel.TblFirmalar">
               <MappingFragment StoreEntitySet="TblFirmalar">
+                <ScalarProperty Name="Gorsel" ColumnName="Gorsel" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="Yetkili" ColumnName="Yetkili" />
@@ -409,6 +419,8 @@
           <EntitySetMapping Name="TblPersoneller">
             <EntityTypeMapping TypeName="DbIsTakipModel.TblPersoneller">
               <MappingFragment StoreEntitySet="TblPersoneller">
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Ad" ColumnName="Ad" />
                 <ScalarProperty Name="Soyad" ColumnName="Soyad" />

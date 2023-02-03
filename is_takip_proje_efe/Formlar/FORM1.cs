@@ -42,14 +42,15 @@ namespace is_takip_proje_efe.Formlar
         {
            
         }
-        Formlar.Gorevfrm grvfrm;
+        Formlar.GorevListesi grvlist;
         private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (grvfrm==null || grvfrm.IsDisposed)
+           
+            if (grvlist == null || grvlist.IsDisposed)
             {
-                grvfrm = new Formlar.Gorevfrm();
-                grvfrm.MdiParent = this;
-                grvfrm.Show();
+                grvlist = new Formlar.GorevListesi();
+                grvlist.MdiParent = this;
+                grvlist.Show();
             }
         }
 
@@ -93,5 +94,33 @@ namespace is_takip_proje_efe.Formlar
                 Aaform.Show();
             }
         }
+        Formlar.FrmAktifCagrilar aktifcagri;
+        private void btnaktfic_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (aktifcagri == null || aktifcagri.IsDisposed)
+            {
+                aktifcagri = new Formlar.FrmAktifCagrilar();
+                aktifcagri.MdiParent = this;
+                aktifcagri.Show();
+            }
+        }
+        Formlar.Gorevfrm grvfrm;
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
+            if (grvfrm == null || grvfrm.IsDisposed)
+            {
+                grvfrm = new Formlar.Gorevfrm();
+                
+                grvfrm.Show();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+      
+        
     }
 }

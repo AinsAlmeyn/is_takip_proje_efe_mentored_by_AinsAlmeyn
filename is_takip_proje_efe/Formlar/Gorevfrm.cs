@@ -33,7 +33,7 @@ namespace is_takip_proje_efe.Formlar
             t.Durum = true;
             t.GorevAlan =int.Parse(lookUpEdit1.EditValue.ToString());
             t.Tarih =DateTime.Parse(lookUpEdit2.Text);
-            t.GorevVeren =int.Parse(gorevverentxt.Text);
+            t.GorevVeren =3;
             db.TblGorevler.Add(t);
             db.SaveChanges();
             XtraMessageBox.Show("görev başarılı", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
